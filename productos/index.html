@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/css?family=Oswald:400,500,600&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,400i,700,700i&display=swap" rel="stylesheet">
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.css'>
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="../css/styles.css">
   <title>Premier</title>
 </head>
 
@@ -22,13 +22,13 @@
         </i>
       </button>
     </div>
-    <nav class="pr-flex-item pr-flex-grow1 pr-nav">
+    <nav class="pr-flex-item pr-flex-grow1 pr-nav" style="max-width: 35%;">
       <ul class="pr-menu pr-flex">
-        <li class="pr-menu--item hidden active">
+        <li class="pr-menu--item hidden">
           <a href="../">Inicio</a>
         </li>
-        <li class="pr-menu--item">
-          <a href="productos/">Productos</a>
+        <li class="pr-menu--item active">
+          <a href="./">Productos</a>
         </li>
         <li class="pr-menu--item">
           <a href="#">País premier</a>
@@ -36,72 +36,52 @@
       </ul>
     </nav>
     <h1 class="pr-flex-item pr-flex-grow1 pr-textAlign center">
-      <a class="pr-logo">
-        <img src="assets/logo.png" />
+      <a class="pr-logo" href="../">
+        <img src="../assets/logo.png" />
       </a>
     </h1>
     <div class="pr-flex-item pr-flex-grow1">
       <ul class="pr-social pr-flex pr-justify-content-end">
         <li><a href="#" class="pr-social--mail-icon"><i class="material-icons">mail_outline</i></a></li>
-        <li><a href="http://facebook.com"><img src="assets/fb.png" alt="Facebook logo"></a></li>
-        <li><a href="http://instagram.com"><img src="assets/ig.png" alt="Instagram logo"></a></li>
-        <li><a href="http://youtube.com"><img src="assets/yt.png" alt="Youtube logo"></a></li>
+        <li><a href="http://facebook.com"><img src="../assets/fb.png" alt="Facebook logo"></a></li>
+        <li><a href="http://instagram.com"><img src="../assets/ig.png" alt="Instagram logo"></a></li>
+        <li><a href="http://youtube.com"><img src="../assets/yt.png" alt="Youtube logo"></a></li>
       </ul>
     </div>
   </header>
 
   <div id="fullpage">
-    <section class="section pr-home-main">
-      <div class="slide">
-        <div class="pr-slide">
-          <img src="assets/slide1.png" alt="Imagen 1 del slide">
-        </div>
-      </div>
-      <div class="slide">
-        <div class="pr-slide">
-        </div>
-      </div>
-    </section>
-    <section class="section pr-home-brand">
-      <div class="pr-home-brand--container">
-        <h1>PREMIER</h1>
-        <h2>LOREM IPSUM DOLOR SIT AMET</h2>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
-          dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nos</p>
-      </div>
-    </section>
-    <section class="section pr-slide pr-video-slide">
-      <div class="slide">
-        <div class="pr-video-slide--video-cont">
-          <img src="assets/video.png" alt="Imagen 1">
-        </div>
-      </div>
-      <div class="slide">
-        <div class="pr-video-slide--video-cont">
-          <img src="assets/video.png" alt="Imagen 1">
-        </div>
-      </div>
-    </section>
-    <section class="section pr-slide pr-ft-video">
-      <h1>VIDEOS <br><span style="margin-left: 30px;">DESTACADOS</span></h1>
-      <div class="slide">
-        <div class="pr-ft-video--video-cont pr-flex">
-          <div class="pr-ft-video--video-cont--video">
-            <img src="assets/ft_video.png" alt="Imagen 1">
+    <section class="section pr-slide pr-productos">
+      <a href="https://merqueo.com/bogota/buscar/premier" target="_blank" class="logo-merqueo">
+        <img src="../assets/logo_merqueo.png" alt="Logo merqueo">
+      </a>
+      <div class="pr-productos-wrapper">
+        <div class="pr-productos--producto">
+          <div class="pr-productos--producto--imagen">
+            <img src="../assets/prod_esparcible.png" alt="Aceite premier">
           </div>
-          <div class="pr-ft-video--video-cont--video">
-            <img src="assets/ft_video.png" alt="Imagen 1">
-          </div>
+          <a class="pr-productos--producto--vinculo">
+            Esparcible
+            <i class="material-icons">add</i>
+          </a>
         </div>
-      </div>
-      <div class="slide">
-        <div class="pr-ft-video--video-cont pr-flex">
-          <div class="pr-ft-video--video-cont--video">
-            <img src="assets/ft_video.png" alt="Imagen 1">
+        <div class="pr-productos--producto">
+          <div class="pr-productos--producto--imagen">
+            <img src="../assets/prod_aceite.png" alt="Aceite premier">
           </div>
-          <div class="pr-ft-video--video-cont--video">
-            <img src="assets/ft_video.png" alt="Imagen 1">
+          <a class="pr-productos--producto--vinculo">
+            Aceite
+            <i class="material-icons">add</i>
+          </a>
+        </div>
+        <div class="pr-productos--producto">
+          <div class="pr-productos--producto--imagen">
+            <img src="../assets/prod_barra.png" alt="Aceite premier">
           </div>
+          <a class="pr-productos--producto--vinculo">
+            Barra
+            <i class="material-icons">add</i>
+          </a>
         </div>
       </div>
     </section>
@@ -110,7 +90,7 @@
         <div class="pr-flex">
           <h1 class="pr-flex-item">
             <a class="pr-logo footer">
-              <img src="assets/logo_footer.png" />
+              <img src="../assets/logo_footer.png" />
             </a>
           </h1>
           <nav class="pr-flex-item pr-flex-grow1 pr-nav">
@@ -157,9 +137,9 @@
         </div>
         <div>
           <ul class="pr-social pr-flex">
-            <li><a href="http://facebook.com"><img src="assets/fb_g.png" alt="Facebook logo"></a></li>
-            <li><a href="http://instagram.com"><img src="assets/ig_g.png" alt="Instagram logo"></a></li>
-            <li><a href="http://youtube.com"><img src="assets/yt_g.png" alt="Youtube logo"></a></li>
+            <li><a href="http://facebook.com"><img src="../assets/fb_g.png" alt="Facebook logo"></a></li>
+            <li><a href="http://instagram.com"><img src="../assets/ig_g.png" alt="Instagram logo"></a></li>
+            <li><a href="http://youtube.com"><img src="../assets/yt_g.png" alt="Youtube logo"></a></li>
           </ul>
         </div>
       </footer>
@@ -172,9 +152,20 @@
   <script src='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.extensions.min.js'></script>
   <script>
     const vw = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+    var productos = document.querySelectorAll('.pr-productos--producto');
+    var productosWrapper = document.querySelector('.pr-productos-wrapper');
+    if (vw < 767) {
+      for(var i = 0; i < productos.length; i++) {
+        var wrapper = document.createElement('div');
+        wrapper.classList = "slide";
+        wrapper.appendChild(productos[i]);
+        productosWrapper.appendChild(wrapper);
+      }
+
+    }
 
     new fullpage('#fullpage', {
-      sectionsColor: ['#26814A', '#26814A', 'none', '#26814A'],
+      sectionsColor: [],
       //options here
       autoScrolling: true,
       scrollBar: vw > 766,
@@ -196,7 +187,8 @@
         this.classList.toggle('open');
       });
     }
-
+    
+    
     function initMenuToggle() {
       const toggleBtn = document.querySelector('.pr-menu--toggle--button');
       const menu = document.querySelector('.pr-sticky-header .pr-nav');

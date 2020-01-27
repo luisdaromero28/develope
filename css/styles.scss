@@ -94,15 +94,10 @@ img {
   }
 }
 .pr-sticky-header {
+  background-image: url(../assets/header_bg.png);
+  background-size: cover;
   font-family: "Oswald", sans-serif;
   align-items: center;
-  background: rgb(255, 255, 255);
-  background: linear-gradient(
-    0deg,
-    rgba(255, 255, 255, 0) 21%,
-    rgba(40, 39, 39, 0.21052170868347342) 45%,
-    rgba(6, 6, 6, 0.5634628851540616) 100%
-  );
   display: flex;
   justify-content: space-between;
   height: 25%;
@@ -126,6 +121,10 @@ img {
 
   &--item {
     padding-top: 1rem;
+
+    &.hidden {
+      display: none;
+    }
 
     &.active,
     &:hover {
@@ -374,16 +373,84 @@ img {
   }
 }
 
+.pr-productos {
+  background: url(../assets/productos_bg.png);
+  background-size: cover;
+  background-position: bottom;
+
+  .logo-merqueo {
+    position: absolute;
+    top: calc(50% + 225px);
+    right: 40px;
+    width: 120px;
+  }
+
+  &-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  &--producto {
+    background: #ffffff;
+    border-radius: 25px;
+    font-family: "Oswald", sans-serif;
+    height: 350px;
+    overflow: hidden;
+    margin: 0 20px;
+    max-width: 250px;
+    position: relative;
+    width: 250px;
+
+    &--imagen {
+      align-items: center;
+      display: flex;
+      height: 100%;
+      justify-content: center;
+      margin: 0 auto;
+      width: 80%;
+    }
+    &--vinculo {
+      bottom: 0;
+      background: #26814a;
+      color: #ffffff;
+      cursor: pointer;
+      padding: 15px 0;
+      position: absolute;
+      text-align: center;
+      text-transform: uppercase;
+      width: 100%;
+      .material-icons {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+}
+
 @media only screen and (max-width: 767px) {
   html {
     font-size: 16px;
   }
 
+  .overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
   .pr-sticky-header {
+    background-position: center;
     .pr-menu--toggle {
       display: inherit;
       height: 30px;
-      margin-left: 5%;
+      left: 15px;
+      position: absolute;
+      top: 40px;
 
       .pr-menu--toggle--button {
         background: none;
@@ -398,14 +465,40 @@ img {
 
     .pr-logo {
       position: absolute;
-      top: 50%;
+      top: 0;
       left: 50%;
-      transform: translate(-50%, -50%);
+      transform: translateX(-50%);
       width: 150px;
     }
 
     .pr-nav {
-      display: none;
+      background-color: #ffffff;
+      height: 100vh;
+      position: absolute;
+      transform: translateX(-100%);
+      width: 75%;
+      top: 0;
+      transition: transform 0.5s;
+      z-index: 2;
+
+      &.open {
+        transform: translateX(0);
+        .pr-menu {
+          display: block;
+
+          &--item {
+            border-bottom: 1px solid #26814a;
+            padding: 1rem;
+
+            &.hidden {
+              display: block;
+            }
+            a {
+              color: #26814a;
+            }
+          }
+        }
+      }
     }
 
     .pr-social {
@@ -449,9 +542,39 @@ img {
         }
       }
     }
-    
+
     .pr-social {
       margin-bottom: 2rem;
+    }
+  }
+
+  .pr-productos {
+    background: url(../assets/productos_bg.png);
+    background-size: cover;
+    background-position: bottom;
+
+    &-wrapper {
+      display: block;
+      justify-content: center;
+
+      .fp-controlArrow {
+        &.fp-prev,
+        &.fp-next {
+          left: calc(50% - 190px);
+        }
+
+        &.fp-prev {
+          top: calc(66% - 50px);
+        }
+
+        &.fp-next {
+          top: 66%;
+        }
+      }
+    }
+
+    &--producto {
+      margin: 0 auto;
     }
   }
 }
