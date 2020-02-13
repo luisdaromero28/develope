@@ -459,6 +459,108 @@ img {
           transform: translateY(-50%);
 }
 
+.pr-contacto {
+  background: url(../assets/contacto_bg.png);
+  background-size: cover;
+  background-position: bottom;
+}
+
+.pr-contacto--wrapper {
+  padding-top: 6rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.pr-contacto--title {
+  color: #fff;
+  font-family: "Oswald", sans-serif;
+  margin-bottom: 1rem;
+  padding-left: 1.8rem;
+  width: 100%;
+}
+
+.pr-contacto--info {
+  background: rgba(113, 96, 52, 0.8);
+  color: white;
+  font-size: 0.85rem;
+  padding: 1.5rem 1.8rem;
+}
+
+.pr-contacto--info p {
+  margin-bottom: 1rem;
+  margin-top: 0;
+}
+
+.pr-contacto--info p:last-child {
+  margin-bottom: 0;
+}
+
+.pr-contacto--left {
+  max-width: 400px;
+}
+
+.pr-contacto--form {
+  padding-left: 5rem;
+  max-width: 550px;
+}
+
+.pr-contacto--form p {
+  color: #fff;
+  font-weight: 500;
+}
+
+.pr-contacto--form--item {
+  background-color: rgba(255, 255, 255, 0.7);
+  border: none;
+  border-radius: 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0.5rem;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin: 0 0.25rem 0.5rem 0.25rem;
+}
+
+.pr-contacto--form--item:first-child {
+  margin-left: 0;
+}
+
+.pr-contacto--form--item:last-child {
+  margin-right: 0;
+}
+
+.pr-contacto--form--item::-webkit-input-placeholder {
+  color: #26814a;
+  font-family: "Oswald", sans-serif;
+}
+
+.pr-contacto--form--item:-ms-input-placeholder {
+  color: #26814a;
+  font-family: "Oswald", sans-serif;
+}
+
+.pr-contacto--form--item::-ms-input-placeholder {
+  color: #26814a;
+  font-family: "Oswald", sans-serif;
+}
+
+.pr-contacto--form--item::placeholder {
+  color: #26814a;
+  font-family: "Oswald", sans-serif;
+}
+
+.pr-contacto--form--button {
+  color: yellowgreen;
+  background: #26814a;
+  font-family: "Oswald", sans-serif;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 2rem;
+  margin: 0.3rem 0 0 auto;
+}
+
 @media only screen and (max-width: 767px) {
   html {
     font-size: 16px;
@@ -587,6 +689,22 @@ img {
   }
   .pr-productos--producto {
     margin: 0 auto;
+  }
+  .pr-contacto--left {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  .pr-contacto--form {
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .pr-contacto--form--item {
+    margin-left: 0;
+    width: 100%;
+  }
+  .pr-contacto--form .pr-flex {
+    display: block;
   }
 }
 /*# sourceMappingURL=styles.css.map */

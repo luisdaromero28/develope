@@ -429,6 +429,87 @@ img {
   }
 }
 
+.pr-contacto {
+  background: url(../assets/contacto_bg.png);
+  background-size: cover;
+  background-position: bottom;
+
+  &--wrapper {
+    padding-top: 6rem;
+    justify-content: center;
+  }
+
+  &--title {
+    color: #fff;
+    font-family: "Oswald", sans-serif;
+    margin-bottom: 1rem;
+    padding-left: 1.8rem;
+    width: 100%;
+  }
+
+  &--info {
+    background: rgba($color: #716034, $alpha: 0.8);
+    color: white;
+    font-size: 0.85rem;
+    padding: 1.5rem 1.8rem;
+
+    p {
+      margin-bottom: 1rem;
+      margin-top: 0;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &--left {
+    max-width: 400px;
+  }
+
+  &--form {
+    padding-left: 5rem;
+    max-width: 550px;
+
+    p {
+      color: #fff;
+      font-weight: 500;
+    }
+
+    &--item {
+      background-color: rgba($color: #fff, $alpha: 0.7);
+      border: none;
+      border-radius: 5px;
+      box-sizing: border-box;
+      padding: 0.5rem;
+      flex-grow: 1;
+      margin: 0 0.25rem 0.5rem 0.25rem;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &::placeholder {
+        color: #26814a;
+        font-family: "Oswald", sans-serif;
+      }
+    }
+
+    &--button {
+      color: yellowgreen;
+      background: #26814a;
+      font-family: "Oswald", sans-serif;
+border: none;
+border-radius: 5px;
+padding: 0.5rem 2rem;
+margin: 0.3rem 0 0 auto;
+    }
+  }
+}
+
 @media only screen and (max-width: 767px) {
   html {
     font-size: 16px;
@@ -575,6 +656,27 @@ img {
 
     &--producto {
       margin: 0 auto;
+    }
+  }
+
+  .pr-contacto {
+    &--left {
+      max-width: 300px;
+      margin: 0 auto;
+    }
+
+    &--form {
+      max-width: 300px;
+      margin: 0 auto;
+      padding: 0;
+
+      &--item {
+        margin-left: 0;
+        width: 100%;
+      }
+      .pr-flex {
+        display: block;
+      }
     }
   }
 }
